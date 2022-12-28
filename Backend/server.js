@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const PORT = 80;
 const db = require("./db");
 const router = require("./routes");
-var cors = require('cors');
 app.use(cors());
 
 //database connection
@@ -38,8 +37,6 @@ app.get("*", (req, res) => {
     res.send("Oops! unexpected error");
   }
 });
-
-app.use(cors());
 
 //server listening
 app.listen(process.env.PORT || PORT, () => {
