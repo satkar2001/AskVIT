@@ -8,7 +8,7 @@ function Feed() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios
-      .get("/api/questions")
+      .get("https://askvit-backend.onrender.com/api/questions")
       .then((res) => {
         console.log(res.data.reverse());
         setPosts(res.data);

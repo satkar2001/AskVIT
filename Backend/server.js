@@ -6,6 +6,8 @@ const bodyParser = require("body-parser");
 const PORT = 80;
 const db = require("./db");
 const router = require("./routes");
+var cors = require('cors');
+app.use(cors());
 
 //database connection
 
