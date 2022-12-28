@@ -3,7 +3,7 @@ import Askvitheader from './Askvitheader'
 import Feed from './Feed';
 
 import './css/askvit.css';
-import { Provider } from 'react-redux';
+
 
 function Askvit() {
   return (

@@ -114,6 +114,7 @@ function Post({ post }) {
                 onChange={handleQuill}
                 placeholder="Enter your answer"
               />
+              
             </div>
             <div className="modal__button">
               <button className="cancle" onClick={() => setIsModalOpen(false)}>
@@ -123,6 +124,7 @@ function Post({ post }) {
                 Add Answer
               </button>
             </div>
+            
           </Modal>
         </div>
         {post.questionUrl !== "" && <img src={post.questionUrl} alt="url" />}
